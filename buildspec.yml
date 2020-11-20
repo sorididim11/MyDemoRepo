@@ -4,9 +4,12 @@ phases:
   install:
     runtime-versions:
       java: openjdk8
+  commands:
+    - mvn clean 
+    - mvn install 
   build:
     commands:
-      - mvn clean package
+      - mvn package
 artifacts:
   discard-paths: yes
   files:

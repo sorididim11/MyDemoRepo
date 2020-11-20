@@ -4,7 +4,8 @@ phases:
   install:
     runtime-versions:
       java: openjdk8
-  commands:
+  pre_build:
+    commands:
     - mvn clean 
     - mvn install 
   build:
